@@ -28,6 +28,20 @@ nav ul {
 nav ul li{
     padding: 0 20px;
 
+
+}
+
+nav ul a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: white;
+}
+nav ul a:hover{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding: 10px;
+    font-weight: bolder;
+
 }
 
 .brand{
@@ -74,6 +88,13 @@ nav ul li{
 .icons i{
     cursor: pointer;
 }
+.icons i:hover{
+    color: rgb(0, 208, 255);
+}
+.fa-circle-pause{
+    color: rgb(0, 208, 255);
+    
+}
 #myProgressBar{
     width: 80vw;
     cursor: pointer;
@@ -105,6 +126,10 @@ nav ul li{
     cursor: pointer;
     padding-right: 30px;
     float: right;
+    font-size: x-large;
+}
+.songlistplay i:hover{
+    color: rgb(0, 208, 255);
 }
 .songInfo{
     position: absolute;

@@ -3,13 +3,6 @@
 }
 
 
-
-
-
-
-
-
-
 @media only screen and (max-width: 600px) {
     body {
       background-color: lightblue;
@@ -49,16 +42,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 400px) {
     body {
       background-color: rgb(180, 230, 173);
@@ -88,6 +71,7 @@
     }
     .songlistplay i{
         padding-right: 5px;
+        font-size: large;
     }
     .songItem img{
         width: 25px;

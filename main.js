@@ -12,7 +12,7 @@ let songs = [
     {songName: "Cielo - Huma-Huma", filePath: "songs/2.mp3", coverPath: "covers/2.jpg", songDuration: "04:20"},
     {songName: "DEAF KEV - Invincible", filePath: "songs/3.mp3", coverPath: "covers/3.jpg", songDuration: "04:40"},
     {songName: "Different Heaven & EH!DE ", filePath: "songs/4.mp3", coverPath: "covers/4.jpg", songDuration: "03:40"},
-    {songName: "Janji-Heroes-Tonight-feat-Johnning", filePath: "songs/5.mp3", coverPath: "covers/5.jpg", songDuration: "02:40"},
+    {songName: "Janji-Heroes", filePath: "songs/5.mp3", coverPath: "covers/5.jpg", songDuration: "02:40"},
     {songName: "Rabba - Salam-e-Ishq", filePath: "songs/6.mp3", coverPath: "covers/6.jpg", songDuration: "05:40"},
     {songName: "Sakhiyaan - Salam-e-Ishq", filePath: "songs/7.mp3", coverPath: "covers/7.jpg", songDuration: "04:20"},
     {songName: "Bhula Dena - Salam-e-Ishq", filePath: "songs/8.mp3", coverPath: "covers/8.jpg", songDuration: "04:30"},
@@ -38,8 +38,12 @@ masterPlay.addEventListener('click',()=>{
         masterPlay.classList.add('fa-circle-play');
         gif.style.opacity=0;
 
+
     }
 })
+
+
+
 audioElement.addEventListener('timeupdate',()=>{
     // Update seekbar
     progress=parseInt((audioElement.currentTime/audioElement.duration)*100);
@@ -56,13 +60,12 @@ const makeAllPlays = ()=>{
         element.classList.remove('fa-circle-pause');
         element.classList.add('fa-circle-play');
     })
-
 }
 
-Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
-    element.addEventListener('click', (e)=>{ 
-        
 
+Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
+
+        element.addEventListener('click', (e)=>{ 
             makeAllPlays();
             songIndex = parseInt(e.target.id);
             e.target.classList.remove('fa-circle-play');
@@ -73,10 +76,10 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
             audioElement.play();
             gif.style.opacity = 1;
             masterPlay.classList.remove('fa-circle-play');
-            masterPlay.classList.add('fa-circle-pause');
-        
-        
-    })
+            masterPlay.classList.add('fa-circle-pause');  
+        })
+    
+    
 })
 
 
