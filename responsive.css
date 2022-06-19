@@ -1,0 +1,118 @@
+@media only screen and (max-width: 1000px) {
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .songList h1{
+        font-size: 25px;
+    
+    }
+    .icons{
+        margin-top: 10px;
+    }
+    .songItem{
+        height: 40px;
+        display: flex;
+        margin: 5px 0;
+        border-radius: 8px;
+        font-size: 12px;
+    }
+    .songlistplay i{
+        padding-right: 5px;
+    }
+    .songItem img{
+        width: 30px;
+        margin: 0 15px;
+        border-radius: 25px;
+    }
+    .timeStamp{
+        margin: 0 10px;
+    }
+    .songInfo{
+        position: relative;
+        left: 0vw;
+        font-size: 14px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 400px) {
+    body {
+      background-color: rgb(180, 230, 173);
+    }
+    .container{
+        min-height: 60vh;
+        margin: 15px auto;
+        width: 80%;
+        border-radius: 10px;
+        padding: 20px;
+        background-image: url('bg.jpg');
+        background-size: 600px;
+    }
+    .songList h1{
+        font-size: 20px;
+    
+    }
+    .icons{
+        margin-top: 10px;
+    }
+    .songItem{
+        height: 40px;
+        display: flex;
+        margin: 5px 0;
+        border-radius: 8px;
+        font-size: 10px;
+    }
+    .songlistplay i{
+        padding-right: 5px;
+    }
+    .songItem img{
+        width: 25px;
+        margin: 0 10px;
+        border-radius: 15px;
+    }
+    .timeStamp{
+        margin: 0 10px;
+    }
+    .songInfo{
+        position: relative;
+        left: 0vw;
+        font-size: 12px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
